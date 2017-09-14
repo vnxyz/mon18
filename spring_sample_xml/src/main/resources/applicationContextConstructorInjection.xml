@@ -7,9 +7,9 @@
 		but reference the interface. So, here we are mentioning the actual implementation 
 		of the class that is supposed to be used.(Application.java) -->
 	<bean name="customerRepository"
-		class="com.pluralsight.a.setterinjection.repository.HibernateCustomerRepositoryImpl" />
+		class="com.pluralsight.b.constructorinjection.repository.HibernateCustomerRepositoryImpl" />
 	<!-- 02. Where we are going to place our business logic -->
-	<bean name="customerService" class="com.pluralsight.a.setterinjection.service.CustomerServiceImpl">
+	<bean name="customerService" class="com.pluralsight.b.constructorinjection.service.CustomerServiceImpl">
 		<!-- 05. Adding property element by name so here property customerRepository in CustomerServiceImpl
 			refers to the bean customerRepository above hence to com.pluralsight.repository.HibernateCustomerRepositoryImpl -->
 		<property name="customerRepository" ref="customerRepository" />

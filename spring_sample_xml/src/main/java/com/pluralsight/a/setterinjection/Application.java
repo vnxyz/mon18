@@ -22,7 +22,7 @@ public class Application {
 		 * root of the directory structure
 		 */
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+				"applicationContextSetterInjection.xml");
 		/*
 		 * 08. Getting reference to the bean customerService in
 		 * applicationContext.xml In this look up method getBean we can pass

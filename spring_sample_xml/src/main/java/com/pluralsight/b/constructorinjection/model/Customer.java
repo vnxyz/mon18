@@ -1,4 +1,4 @@
-package com.pluralsight.a.setterinjection.model;
+package com.pluralsight.b.constructorinjection.model;
 
 public class Customer {
 	

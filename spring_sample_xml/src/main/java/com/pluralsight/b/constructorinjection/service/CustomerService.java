@@ -1,9 +1,8 @@
-package com.pluralsight.a.setterinjection.service;
+package com.pluralsight.b.constructorinjection.service;
 
 import java.util.List;
 
-import com.pluralsight.a.setterinjection.model.Customer;
-
+import com.pluralsight.b.constructorinjection.model.Customer;
 public interface CustomerService {
 
 	public abstract List<Customer> findAll();

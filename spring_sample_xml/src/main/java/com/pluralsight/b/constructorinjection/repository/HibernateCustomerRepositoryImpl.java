@@ -1,9 +1,11 @@
-package com.pluralsight.a.setterinjection.repository;
+package com.pluralsight.b.constructorinjection.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pluralsight.a.setterinjection.model.Customer;
+import com.pluralsight.b.constructorinjection.model.Customer;
+
+
 
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
