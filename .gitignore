@@ -1,0 +1,9 @@
+/spring_sample/.settings
+/spring_sample_xml/.settings
+/spring_sample_xml/target/classes/com/pluralsight/a/setterinjection/repository/*.class
+/spring_sample_xml/target/classes/com/pluralsight/b/constructorinjection/model/*.class
+target
+.metadata
+/plural/*.pdf
+*.pdf
+plural

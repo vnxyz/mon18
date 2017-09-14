@@ -1,4 +1,4 @@
-package com.pluralsight.b.constructorinjection.service;
+package com.pluralsight.c.autowireconstructorinjection.service;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	private CustomerRepository customerRepository;
 
+	// 02. Creating constructors
 	public CustomerServiceImpl() {
 
 	}
@@ -21,6 +22,7 @@ public class CustomerServiceImpl implements CustomerService {
 		return customerRepository.findAll();
 	}
 
+	// 04. setting customerRepository for setter injection
 	public void setCustomerRepository(CustomerRepository customerRepository) {
 		this.customerRepository = customerRepository;
 	}
