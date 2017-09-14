@@ -2,8 +2,7 @@ package com.pluralsight.c.autowireconstructorinjection.repository;
 
 import java.util.List;
 
-import com.pluralsight.b.constructorinjection.model.Customer;
-
+import com.pluralsight.c.autowireconstructorinjection.model.Customer;
 
 public interface CustomerRepository {
 

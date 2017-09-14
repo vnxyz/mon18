@@ -4,12 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean name="customerRepository"
-		class="com.pluralsight.b.constructorinjection.repository.HibernateCustomerRepositoryImpl" />
+		class="com.pluralsight.c.autowireconstructorinjection.repository.HibernateCustomerRepositoryImpl" />
 	<bean name="customerService"
-		class="com.pluralsight.b.constructorinjection.service.CustomerServiceImpl">
-		<!-- 01. Changing this to constructor argument where name is not applicable 
-			and we are changing it to index 0. We have to define a constructor in "com.pluralsight.b.constructorinjection.service.CustomerServiceImpl" -->
-		<!-- <property name="customerRepository" ref="customerRepository" /> -->
+		class="com.pluralsight.c.autowireconstructorinjection.service.CustomerServiceImpl">
 		<constructor-arg index="0" ref="customerRepository" />
 	</bean>
 </beans>
