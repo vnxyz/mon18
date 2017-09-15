@@ -25,6 +25,10 @@ import com.pluralsight.c.autowireconstructorinjection.service.CustomerService;
  * 			-->	constructor
  * 					As seen in before example constructor autowiring is similar to 
  * 					setter injection.
+ * 					--> Guaranteed constructor
+ * 					--> Constructor defined for each situation
+ * 					--> Use together with setter injection
+ * 					--> It is index based 
  * 			--> no
  * 					It means we cannot autowire. 
  * 

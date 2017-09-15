@@ -4,12 +4,20 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean name="customerRepository"
-		class="com.pluralsight.c.autowireconstructorinjection.repository.HibernateCustomerRepositoryImpl" />
+		class="com.pluralsight.d.autowirebytype.repository.HibernateCustomerRepositoryImpl" />
+	<!-- <bean name="customerService" class="com.pluralsight.d.autowirebytype.service.CustomerServiceImpl" 
+		autowire="constructor"> -->
+	<!-- Changing it to either byType or byName works. -->
+	<!-- When it is "byType" it will go into CustomerServiceImpl and verify 
+		couple of things A default no argument type constructor and a setter public 
+		void setCustomerRepository Since it is byType it will look at the arguments 
+		of the setter i.e. argument of setCustomerRepository and wires it accordingly -->
+	<!-- If autowire = "byName" then it will check out byName. If we change 
+		the above bean's name from customerRepository to foo then it will fail, but 
+		if we change the name of the setter to setFoo then the wiring works -->
 	<bean name="customerService"
-		class="com.pluralsight.c.autowireconstructorinjection.service.CustomerServiceImpl"
-		autowire="constructor">
-		<!-- 01.Commenting constructor-arg and set autowire="constructor" in above 
-			statement -->
-		<!-- <constructor-arg index="0" ref="customerRepository" /> -->
+		class="com.pluralsight.d.autowirebytype.service.CustomerServiceImpl"
+		autowire="byType">
+
 	</bean>
 </beans>
