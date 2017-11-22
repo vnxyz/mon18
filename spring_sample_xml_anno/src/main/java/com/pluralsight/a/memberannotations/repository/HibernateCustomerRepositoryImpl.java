@@ -1,11 +1,11 @@
-package com.pluralsight.repository;
+package com.pluralsight.a.memberannotations.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.pluralsight.model.Customer;
+import com.pluralsight.a.memberannotations.model.Customer;
 //06. Defining it as repository bean
 @Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {

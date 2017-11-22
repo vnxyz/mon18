@@ -1,12 +1,12 @@
-package com.pluralsight.service;
+package com.pluralsight.a.memberannotations.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pluralsight.model.Customer;
-import com.pluralsight.repository.CustomerRepository;
+import com.pluralsight.a.memberannotations.model.Customer;
+import com.pluralsight.a.memberannotations.repository.CustomerRepository;
 
 //07. Defining it as a service bean
 /*08. 

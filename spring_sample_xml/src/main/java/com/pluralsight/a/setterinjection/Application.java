@@ -27,7 +27,7 @@ public class Application {
 		 * 08. Getting reference to the bean customerService in
 		 * applicationContext.xml In this look up method getBean we can pass
 		 * bean name and class type so that we don't have to cast or suppress
-		 * warnings. So we are telling that it is looking CustomerService.class
+		 * warnings. So we are telling that it is looking CustomerService.class(Interface)
 		 */
 		CustomerService service = appContext.getBean("customerService",
 				CustomerService.class);

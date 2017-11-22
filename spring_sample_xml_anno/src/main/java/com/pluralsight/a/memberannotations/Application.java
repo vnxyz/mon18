@@ -1,7 +1,8 @@
+package com.pluralsight.a.memberannotations;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.pluralsight.service.CustomerService;
+import com.pluralsight.a.memberannotations.service.CustomerService;
 
 /**
  * 01. Just like in the XML configuration module, we need a place to bootstrap

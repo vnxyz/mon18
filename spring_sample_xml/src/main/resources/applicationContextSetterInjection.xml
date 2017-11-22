@@ -10,8 +10,18 @@
 		class="com.pluralsight.a.setterinjection.repository.HibernateCustomerRepositoryImpl" />
 	<!-- 02. Where we are going to place our business logic -->
 	<bean name="customerService" class="com.pluralsight.a.setterinjection.service.CustomerServiceImpl">
-		<!-- 05. Adding property element by name so here property customerRepository in CustomerServiceImpl
+		<!-- 05. Adding property element by name, so here property customerRepository in CustomerServiceImpl
 			refers to the bean customerRepository above hence to com.pluralsight.repository.HibernateCustomerRepositoryImpl -->
+			
 		<property name="customerRepository" ref="customerRepository" />
 	</bean>
+	
+<!-- 	
+	For understanding
+	<bean name="foo"
+		class="com.pluralsight.a.setterinjection.repository.HibernateCustomerRepositoryImpl" />
+	<bean name="customerService" class="com.pluralsight.a.setterinjection.service.CustomerServiceImpl">	
+		<property name="customerRepository" ref="foo" />
+	</bean> 
+	-->
 </beans>

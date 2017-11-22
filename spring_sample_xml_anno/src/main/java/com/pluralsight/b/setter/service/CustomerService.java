@@ -1,8 +1,8 @@
-package com.pluralsight.service;
+package com.pluralsight.b.setter.service;
 
 import java.util.List;
 
-import com.pluralsight.model.Customer;
+import com.pluralsight.a.memberannotations.model.Customer;
 
 public interface CustomerService {
 

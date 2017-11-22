@@ -1,4 +1,4 @@
-package com.pluralsight.model;
+package com.pluralsight.a.memberannotations.model;
 
 public class Customer {
 	
