@@ -23,9 +23,9 @@ import com.pluralsight.a.memberannotations.service.CustomerService;
  * features or functionality. Its just how you think of them and how you use
  * them.
  * 
- * @Component --> any POJO
+ * @Component --> any POJO(beans)
  * @Service --> business logic layer (Not WebService)
- * @Repository --> Data layer (Spring JDBC Template, Hibernate, JPA, iBatis)
+ * @Repository --> Data Access layer (Spring JDBC Template, Hibernate, JPA, iBatis)
  */
 /**
  * Let's annotate our classes HibernateCustomerRepositoryImpl and CustomerServiceImpl respectively
