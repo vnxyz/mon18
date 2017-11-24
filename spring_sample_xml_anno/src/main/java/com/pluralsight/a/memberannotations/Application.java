@@ -56,7 +56,7 @@ public class Application {
 		// 11.
 		// CustomerService service = new CustomerServiceImpl();
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+				"applicationContextConstructor.xml");
 		CustomerService service = appContext.getBean("customerService",
 				CustomerService.class);
 		System.out.println(service.findAll().get(0).getFirstName());

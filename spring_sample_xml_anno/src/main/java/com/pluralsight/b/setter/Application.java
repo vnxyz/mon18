@@ -27,7 +27,7 @@ public class Application {
 	public static void main(String[] args) {
 
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+				"applicationContextSetter.xml");
 		CustomerService service = appContext.getBean("customerService",
 				CustomerService.class);
 		System.out.println(service.findAll().get(0).getFirstName());
