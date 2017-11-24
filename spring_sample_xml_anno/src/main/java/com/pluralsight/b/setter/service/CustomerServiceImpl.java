@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pluralsight.a.memberannotations.model.Customer;
-import com.pluralsight.a.memberannotations.repository.CustomerRepository;
+import com.pluralsight.b.setter.model.Customer;
+import com.pluralsight.b.setter.repository.CustomerRepository;
 
 
 @Service("customerService")

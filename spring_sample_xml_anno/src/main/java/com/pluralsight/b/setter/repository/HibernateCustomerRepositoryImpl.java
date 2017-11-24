@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.pluralsight.a.memberannotations.model.Customer;
+import com.pluralsight.b.setter.model.Customer;
 
 @Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
